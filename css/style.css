@@ -108,6 +108,10 @@ button {
     padding: 0;
     margin: 0;
     background: none;
+    border: none;
+    color: inherit;
+    appearance: none;
+    -webkit-appearance: none;
 }
 
 a:focus-visible,
@@ -1081,8 +1085,8 @@ section.experience {
         grid-template-columns: 1fr;
     }
     .hero-name {
-        justify-content: flex-start;
-        text-align: left;
+        justify-content: center;
+        text-align: center;
     }
     .hero-photo-wrap {
         width: min(320px, 60vw);
