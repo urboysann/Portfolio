@@ -260,6 +260,71 @@ input:focus-visible {
     background: var(--ink);
     color: var(--dark-text);
 }
+.lang-dropdown-wrapper {
+    position: relative;
+    display: none; /* hidden on desktop */
+}
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--ink);
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+.lang-toggle:hover {
+    background: rgba(0,0,0,0.05);
+}
+.lang-dropdown {
+    position: absolute;
+    top: calc(100% + 6px);
+    right: 0;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 12px; /* Fixed: Not using var(--radius) which is 999px */
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 140px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-5px);
+    transition: all 0.2s ease;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+.lang-dropdown.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.lang-option {
+    padding: 10px 12px;
+    border-radius: 8px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--muted);
+    background: transparent;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: none;
+}
+.lang-option:hover {
+    background: rgba(0,0,0,0.03);
+    color: var(--ink);
+}
+.lang-option.is-active {
+    background: rgba(0,0,0,0.05);
+    color: var(--ink);
+    font-weight: 600;
+}
 
 /* ==========================================================================
    NAV
@@ -639,7 +704,7 @@ section {
 }
 
 /* ==========================================================================
-   SERVICES
+   SERVICES — semua tertutup (tidak ada is-open default)
    ========================================================================== */
 .service-item {
     border-radius: 20px;
@@ -1048,6 +1113,243 @@ section.experience {
 }
 
 /* ==========================================================================
+   RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 1100px) {
+    .hero-photo-wrap {
+        width: min(420px, 42vw);
+    }
+    .work-grid {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 980px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        background: var(--surface);
+        border-bottom: 1px solid var(--line);
+        padding: 8px var(--pad) 20px;
+        box-shadow: 0 20px 40px -24px rgba(18, 18, 18, .28);
+    }
+    .nav-links a {
+        width: 100%;
+        padding: 14px 0;
+        border-bottom: 1px solid var(--line);
+        font-size: 16px;
+    }
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
+    .nav-toggle {
+        display: flex;
+    }
+    .nav-cta .btn-dark {
+        display: none;
+    }
+    .status-badge {
+        white-space: nowrap;
+    }
+    .nav-toggle span {
+        transition: background .2s ease .1s;
+    }
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+        transition: transform .2s ease, top .2s ease;
+    }
+    .nav-toggle[aria-expanded="true"] span {
+        background: transparent;
+    }
+    .nav-toggle[aria-expanded="true"] span::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .nav-toggle[aria-expanded="true"] span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+    .hero-name {
+        justify-content: center;
+        text-align: center;
+    }
+    .hero-photo-wrap {
+        width: min(320px, 60vw);
+        order: -1;
+        margin-bottom: 24px;
+        margin-top: 0;
+        align-self: center;
+    }
+    .hero-photo {
+        height: auto;
+        aspect-ratio: 1000 / 1230;
+    }
+    .hero-left {
+        text-align: left;
+    }
+    .hero-left .btn {
+        margin: 0;
+    }
+    .hero-desc {
+        max-width: 420px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: left;
+    }
+    .hero-right {
+        align-items: stretch;
+    }
+
+    .work-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+    .work-body {
+        padding: 16px;
+    }
+
+    .service-panel-inner {
+        padding-left: 40px;
+    }
+    .service-illustration {
+        display: none;
+    }
+
+    .exp-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+    .exp-date {
+        text-align: left;
+    }
+    .exp-focus {
+        text-align: left;
+    }
+
+    .modal-panel {
+        padding: 18px 20px 32px;
+    }
+    .modal-image-wrap {
+        aspect-ratio: 1.96/1;
+    }
+
+    .lang-btn {
+        font-size: 10px;
+        padding: 4px 6px;
+        min-width: 24px;
+    }
+    .lang-switcher {
+        display: none !important;
+    }
+    .lang-dropdown-wrapper {
+        display: block;
+    }
+}
+
+@media (max-width: 700px) {
+    .work-grid {
+        grid-template-columns: 1fr;
+    }
+    .section-head {
+        align-items: flex-start;
+    }
+    .work-filters {
+        gap: 16px;
+    }
+    .lang-btn {
+        font-size: 9px;
+        padding: 3px 5px;
+        min-width: 20px;
+    }
+    .lang-switcher {
+        gap: 2px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-name {
+        gap: 0 12px;
+    }
+    .hero-right .pill {
+        padding: 9px 14px;
+    }
+    .service-panel-inner {
+        padding-left: 4px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+    .service-index {
+        display: none;
+    }
+    .service-index-photo {
+        width: 30px;
+        height: 30px;
+        border-radius: 8px;
+        margin-right: 12px;
+    }
+    .service-name {
+        font-size: clamp(20px, 6vw, 28px);
+    }
+    .service-trigger {
+        padding: 18px 16px;
+    }
+    .modal-panel {
+        padding: 14px 16px 28px;
+    }
+    .contact-footer {
+        gap: 10px;
+    }
+    .nav-cta {
+        gap: 8px;
+    }
+    .lang-dropdown-wrapper {
+        order: 0;
+    }
+    .nav-toggle {
+        order: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .status-badge {
+        font-size: 12px;
+        padding: 8px 14px 8px 10px;
+    }
+    .nav-cta {
+        gap: 6px;
+    }
+    .btn {
+        padding: 11px 16px;
+        font-size: 13.5px;
+    }
+    .work-title {
+        font-size: 17px;
+    }
+    .lang-btn {
+        font-size: 8px;
+        padding: 2px 4px;
+        min-width: 18px;
+    }
+    .lang-switcher {
+        gap: 1px;
+        padding: 1px;
+    }
+}
+
+/* ==========================================================================
    INTRO OVERLAY
    ========================================================================== */
 .intro-overlay {
@@ -1140,443 +1442,5 @@ section.experience {
     }
     .intro-eyebrow {
         opacity: 1;
-    }
-}
-
-/* ==========================================================================
-   RESPONSIVE — PERBESAR TOMBOL DI MOBILE & TABLET
-   ========================================================================== */
-
-/* ---- Tablet ---- */
-@media (max-width: 980px) {
-    .nav-links {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0;
-        background: var(--surface);
-        border-bottom: 1px solid var(--line);
-        padding: 8px var(--pad) 20px;
-        box-shadow: 0 20px 40px -24px rgba(18, 18, 18, .28);
-    }
-    .nav-links a {
-        width: 100%;
-        padding: 14px 0;
-        border-bottom: 1px solid var(--line);
-        font-size: 16px;
-    }
-    .nav-links a:last-child {
-        border-bottom: none;
-    }
-    .nav-toggle {
-        display: flex;
-    }
-    .nav-cta .btn-dark {
-        display: none;
-    }
-    .status-badge {
-        white-space: nowrap;
-    }
-    .nav-toggle span {
-        transition: background .2s ease .1s;
-    }
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-        transition: transform .2s ease, top .2s ease;
-    }
-    .nav-toggle[aria-expanded="true"] span {
-        background: transparent;
-    }
-    .nav-toggle[aria-expanded="true"] span::before {
-        top: 0;
-        transform: rotate(45deg);
-    }
-    .nav-toggle[aria-expanded="true"] span::after {
-        top: 0;
-        transform: rotate(-45deg);
-    }
-
-    .hero-grid {
-        grid-template-columns: 1fr;
-    }
-    .hero-name {
-        justify-content: center;
-        text-align: center;
-    }
-    .hero-photo-wrap {
-        width: min(320px, 60vw);
-        order: -1;
-        margin-bottom: 24px;
-        margin-top: 0;
-        align-self: center;
-    }
-    .hero-photo {
-        height: auto;
-        aspect-ratio: 1000 / 1230;
-    }
-    .hero-left {
-        text-align: center;
-    }
-    .hero-left .btn {
-        margin: 0 auto;
-    }
-    .hero-desc {
-        max-width: 420px;
-        margin-left: auto;
-        margin-right: auto;
-        text-align: center;
-    }
-    .hero-right {
-        align-items: stretch;
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .work-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 18px;
-    }
-    .work-body {
-        padding: 16px;
-    }
-
-    .service-panel-inner {
-        padding-left: 40px;
-    }
-    .service-illustration {
-        display: none;
-    }
-
-    .exp-row {
-        grid-template-columns: 1fr;
-        gap: 6px;
-    }
-    .exp-date {
-        text-align: left;
-    }
-    .exp-focus {
-        text-align: left;
-    }
-
-    .modal-panel {
-        padding: 18px 20px 32px;
-    }
-    .modal-image-wrap {
-        aspect-ratio: 1.96/1;
-    }
-
-    /* ----- PERBESAR TOMBOL DI TABLET ----- */
-    .btn {
-        padding: 16px 28px;
-        font-size: 16px;
-    }
-    .btn svg {
-        width: 18px;
-        height: 18px;
-    }
-
-    .pill {
-        padding: 12px 20px;
-        font-size: 15px;
-        gap: 8px;
-    }
-    .pill svg {
-        width: 18px;
-        height: 18px;
-    }
-    .pill-text .pill-label {
-        font-size: 15px;
-    }
-    .pill-text .pill-handle {
-        font-size: 13px;
-    }
-
-    .status-badge {
-        padding: 11px 18px 11px 14px;
-        font-size: 14px;
-        gap: 10px;
-    }
-    .status-dot {
-        width: 9px;
-        height: 9px;
-    }
-
-    .nav-toggle {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
-    }
-    .nav-toggle span,
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-        width: 22px;
-        height: 2.5px;
-    }
-    .nav-toggle span::before {
-        top: -7px;
-    }
-    .nav-toggle span::after {
-        top: 7px;
-    }
-
-    .lang-btn {
-        font-size: 12px;
-        padding: 6px 10px;
-        min-width: 32px;
-    }
-    .lang-switcher {
-        gap: 4px;
-        padding: 4px;
-    }
-
-    .filter-btn {
-        font-size: 16px;
-        padding: 10px 6px;
-    }
-
-    .tag {
-        font-size: 14px;
-        padding: 8px 16px;
-        gap: 7px;
-    }
-    .tag-icon {
-        width: 16px;
-        height: 16px;
-    }
-
-    .contact .btn-dark {
-        padding: 18px 32px;
-        font-size: 17px;
-    }
-}
-
-/* ---- Mobile (max-width: 700px) ---- */
-@media (max-width: 700px) {
-    .work-grid {
-        grid-template-columns: 1fr;
-    }
-    .section-head {
-        align-items: flex-start;
-    }
-    .work-filters {
-        gap: 16px;
-    }
-
-    /* ----- PERBESAR TOMBOL DI MOBILE ----- */
-    .btn {
-        padding: 18px 32px;
-        font-size: 17px;
-        gap: 10px;
-    }
-    .btn svg {
-        width: 20px;
-        height: 20px;
-    }
-
-    .pill {
-        padding: 14px 22px;
-        font-size: 16px;
-        gap: 10px;
-        border-radius: var(--radius);
-    }
-    .pill svg {
-        width: 20px;
-        height: 20px;
-    }
-    .pill-text .pill-label {
-        font-size: 16px;
-    }
-    .pill-text .pill-handle {
-        font-size: 14px;
-    }
-
-    .status-badge {
-        padding: 12px 20px 12px 16px;
-        font-size: 15px;
-        gap: 11px;
-    }
-    .status-dot {
-        width: 10px;
-        height: 10px;
-    }
-
-    .nav-toggle {
-        width: 52px;
-        height: 52px;
-        border-radius: 14px;
-    }
-    .nav-toggle span,
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-        width: 24px;
-        height: 3px;
-    }
-    .nav-toggle span::before {
-        top: -8px;
-    }
-    .nav-toggle span::after {
-        top: 8px;
-    }
-
-    .lang-btn {
-        font-size: 13px;
-        padding: 7px 12px;
-        min-width: 36px;
-    }
-    .lang-switcher {
-        gap: 5px;
-        padding: 4px;
-    }
-
-    .nav-cta {
-        gap: 10px;
-    }
-
-    .filter-btn {
-        font-size: 17px;
-        padding: 12px 8px;
-    }
-
-    .tag {
-        font-size: 15px;
-        padding: 9px 18px;
-        gap: 8px;
-        border-radius: var(--radius);
-    }
-    .tag-icon {
-        width: 18px;
-        height: 18px;
-    }
-
-    .contact .btn-dark {
-        padding: 20px 36px;
-        font-size: 18px;
-    }
-
-    .footer-name-pill {
-        padding: 8px 20px 8px 8px;
-        font-size: 15px;
-    }
-    .footer-avatar {
-        width: 30px;
-        height: 30px;
-    }
-
-    .modal-close {
-        width: 48px;
-        height: 48px;
-    }
-    .modal-close svg {
-        width: 24px;
-        height: 24px;
-    }
-}
-
-/* ---- Small phones (max-width: 480px) ---- */
-@media (max-width: 480px) {
-    .btn {
-        padding: 20px 36px;
-        font-size: 18px;
-        gap: 12px;
-    }
-    .btn svg {
-        width: 22px;
-        height: 22px;
-    }
-
-    .pill {
-        padding: 16px 24px;
-        font-size: 17px;
-        gap: 12px;
-    }
-    .pill svg {
-        width: 22px;
-        height: 22px;
-    }
-    .pill-text .pill-label {
-        font-size: 17px;
-    }
-    .pill-text .pill-handle {
-        font-size: 15px;
-    }
-
-    .status-badge {
-        padding: 14px 22px 14px 18px;
-        font-size: 16px;
-        gap: 12px;
-    }
-    .status-dot {
-        width: 11px;
-        height: 11px;
-    }
-
-    .nav-toggle {
-        width: 56px;
-        height: 56px;
-        border-radius: 16px;
-    }
-    .nav-toggle span,
-    .nav-toggle span::before,
-    .nav-toggle span::after {
-        width: 26px;
-        height: 3px;
-    }
-    .nav-toggle span::before {
-        top: -9px;
-    }
-    .nav-toggle span::after {
-        top: 9px;
-    }
-
-    .lang-btn {
-        font-size: 14px;
-        padding: 8px 14px;
-        min-width: 40px;
-    }
-    .lang-switcher {
-        gap: 6px;
-        padding: 5px;
-    }
-
-    .filter-btn {
-        font-size: 18px;
-        padding: 14px 10px;
-    }
-
-    .tag {
-        font-size: 16px;
-        padding: 10px 20px;
-        gap: 9px;
-    }
-    .tag-icon {
-        width: 20px;
-        height: 20px;
-    }
-
-    .contact .btn-dark {
-        padding: 22px 40px;
-        font-size: 19px;
-    }
-
-    .footer-name-pill {
-        padding: 10px 22px 10px 10px;
-        font-size: 16px;
-    }
-    .footer-avatar {
-        width: 32px;
-        height: 32px;
-    }
-
-    .modal-close {
-        width: 52px;
-        height: 52px;
-    }
-    .modal-close svg {
-        width: 26px;
-        height: 26px;
     }
 }

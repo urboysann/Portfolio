@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Santika Kumara — Full-Stack Developer</title>
-    <meta name="description" content="Portofolio Santika Kumara, Full-Stack Developer. Membangun produk web yang cepat, rapi, dan siap produksi." />
+    <meta name="description"
+        content="Portofolio Santika Kumara, Full-Stack Developer. Membangun produk web yang cepat, rapi, dan siap produksi." />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,7 @@
     <link rel="icon" href="favicon.ico" sizes="any">
     <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
 
     <!-- ============================== INTRO OVERLAY ============================== -->
@@ -41,13 +44,28 @@
             <div class="nav-cta">
                 <a href="#contact" class="btn btn-dark" data-i18n="nav.cta">
                     Hubungi saya
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M7 17L17 7M17 7H9M17 7V15" />
+                    </svg>
                 </a>
 
                 <!-- ===== LANGUAGE SWITCHER ===== -->
                 <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Pilih bahasa">
-                    <button class="lang-btn is-active" data-lang="id" aria-label="Bahasa Indonesia" title="Bahasa Indonesia">ID</button>
+                    <button class="lang-btn is-active" data-lang="id" aria-label="Bahasa Indonesia"
+                        title="Bahasa Indonesia">ID</button>
                     <button class="lang-btn" data-lang="en" aria-label="English" title="English">EN</button>
+                </div>
+
+                <!-- ===== MOBILE LANGUAGE DROPDOWN ===== -->
+                <div class="lang-dropdown-wrapper" id="langDropdownWrapper">
+                    <button class="lang-toggle" id="langToggle" aria-expanded="false" aria-label="Pilih bahasa">
+                        <span id="currentLangLabel">ID</span>
+                        <svg viewBox="0 0 24 24" width="14" height="14" stroke="currentColor" stroke-width="2" fill="none"><path d="M6 9l6 6 6-6"/></svg>
+                    </button>
+                    <div class="lang-dropdown" id="langDropdown">
+                        <button class="lang-option is-active" data-lang="id">Bahasa Indonesia</button>
+                        <button class="lang-option" data-lang="en">English</button>
+                    </div>
                 </div>
 
                 <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
@@ -67,10 +85,14 @@
             <div class="hero-grid">
                 <div class="hero-left reveal">
                     <p class="hero-role mono" data-i18n="hero.role">role: Full-Stack Developer</p>
-                    <p class="hero-desc" data-i18n="hero.desc">Menghadirkan produk digital yang responsif dan terarsitektur rapi, menjamin pengalaman pengguna yang optimal dari desain awal hingga tahap deployment.</p>
+                    <p class="hero-desc" data-i18n="hero.desc">Menghadirkan produk digital yang responsif dan
+                        terarsitektur rapi, menjamin pengalaman pengguna yang optimal dari desain awal hingga tahap
+                        deployment.</p>
                     <a href="#work" class="btn btn-dark" data-i18n="hero.cta">
                         Lihat karya
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" />
+                        </svg>
                     </a>
                 </div>
 
@@ -80,21 +102,32 @@
 
                 <div class="hero-right reveal">
                     <a href="https://github.com/urboysann" target="_blank" rel="noopener" class="pill">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18v3.23c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18v3.23c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z" />
+                        </svg>
                         <span class="pill-text">
                             <span class="pill-label" data-i18n="social.github.label">GitHub</span>
                             <span class="pill-handle">@urboysann</span>
                         </span>
                     </a>
                     <a href="https://www.linkedin.com/in/santikakumara/" target="_blank" rel="noopener" class="pill">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                        </svg>
                         <span class="pill-text">
                             <span class="pill-label" data-i18n="social.linkedin.label">LinkedIn</span>
                             <span class="pill-handle">@santikakumara</span>
                         </span>
                     </a>
                     <a href="https://instagram.com/santikakumara" target="_blank" rel="noopener" class="pill">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="5" />
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                        </svg>
                         <span class="pill-text">
                             <span class="pill-label" data-i18n="social.instagram.label">Instagram</span>
                             <span class="pill-handle">@santikakumara</span>
@@ -111,13 +144,15 @@
         <div class="container">
             <div class="section-head reveal">
                 <div>
-                    <p class="section-label"><span class="idx">//</span> <span data-i18n="work.label">selected work</span></p>
+                    <p class="section-label"><span class="idx">//</span> <span data-i18n="work.label">selected
+                            work</span></p>
                     <h2 class="section-title" data-i18n="work.title">Proyek pilihan</h2>
                 </div>
                 <div class="work-filters">
                     <button class="filter-btn is-active" data-filter="all" data-i18n="work.filter.all">Semua</button>
                     <button class="filter-btn" data-filter="product" data-i18n="work.filter.product">Produk</button>
-                    <button class="filter-btn" data-filter="exploration" data-i18n="work.filter.exploration">Eksplorasi</button>
+                    <button class="filter-btn" data-filter="exploration"
+                        data-i18n="work.filter.exploration">Eksplorasi</button>
                 </div>
             </div>
 
@@ -127,14 +162,20 @@
                     <button class="work-thumb" data-project="0" aria-label="Buka detail proyek">
                         <img src="assets/eagles.jpeg" alt="PNBEAGLES SEASON 9" loading="lazy" />
                         <span class="work-badge mono" data-i18n="work.badge.product">product</span>
-                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
+                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" />
+                            </svg></span>
                     </button>
                     <div class="work-body">
-                        <h3 class="work-title" data-i18n="projects.0.title">PNB EAGLES SEASON 9 — E-Sports Tournament</h3>
+                        <h3 class="work-title" data-i18n="projects.0.title">PNB EAGLES SEASON 9 — E-Sports Tournament
+                        </h3>
                         <div class="work-tags">
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nextdotjs" alt="" />Next.js</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript" alt="" />TypeScript</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nextdotjs"
+                                    alt="" />Next.js</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss"
+                                    alt="" />Tailwind</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript"
+                                    alt="" />TypeScript</span>
                         </div>
                     </div>
                 </article>
@@ -144,14 +185,19 @@
                     <button class="work-thumb" data-project="1" aria-label="Buka detail proyek">
                         <img src="assets/intechfest.jpeg" alt="IntechFest" loading="lazy" />
                         <span class="work-badge mono" data-i18n="work.badge.product">product</span>
-                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
+                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" />
+                            </svg></span>
                     </button>
                     <div class="work-body">
                         <h3 class="work-title" data-i18n="projects.1.title">IntechFest — Festival Teknologi</h3>
                         <div class="work-tags">
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/laravel" alt="" />Laravel</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/mysql" alt="" />MySQL</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/laravel"
+                                    alt="" />Laravel</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss"
+                                    alt="" />Tailwind</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/mysql"
+                                    alt="" />MySQL</span>
                         </div>
                     </div>
                 </article>
@@ -161,14 +207,20 @@
                     <button class="work-thumb" data-project="2" aria-label="Buka detail proyek">
                         <img src="assets/melahin.jpeg" alt="IMelahin.id" loading="lazy" />
                         <span class="work-badge mono" data-i18n="work.badge.exploration">exploration</span>
-                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
+                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" />
+                            </svg></span>
                     </button>
                     <div class="work-body">
                         <h3 class="work-title" data-i18n="projects.2.title">Melahin.id — Manajemen Sampah</h3>
                         <div class="work-tags">
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/html5" alt="" />HTML</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" />CSS</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/javascript" alt="" />JavaScript</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/html5"
+                                    alt="" />HTML</span>
+                            <span class="tag"><img class="tag-icon"
+                                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                    alt="" />CSS</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/javascript"
+                                    alt="" />JavaScript</span>
                         </div>
                     </div>
                 </article>
@@ -178,14 +230,19 @@
                     <button class="work-thumb" data-project="3" aria-label="Buka detail proyek">
                         <img src="assets/webcom.jpeg" alt="Web Community" loading="lazy" />
                         <span class="work-badge mono" data-i18n="work.badge.product">product</span>
-                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
+                        <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2">
+                                <path d="M7 17L17 7M17 7H9M17 7V15" />
+                            </svg></span>
                     </button>
                     <div class="work-body">
                         <h3 class="work-title" data-i18n="projects.3.title">Web Community — Komunitas Developer</h3>
                         <div class="work-tags">
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vuedotjs" alt="" />Vue.js</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript" alt="" />TypeScript</span>
-                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vuedotjs"
+                                    alt="" />Vue.js</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript"
+                                    alt="" />TypeScript</span>
+                            <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss"
+                                    alt="" />Tailwind</span>
                         </div>
                     </div>
                 </article>
@@ -199,7 +256,8 @@
         <div class="container">
             <div class="section-head reveal">
                 <div>
-                    <p class="section-label"><span class="idx">//</span> <span data-i18n="services.label">services</span></p>
+                    <p class="section-label"><span class="idx">//</span> <span
+                            data-i18n="services.label">services</span></p>
                     <h2 class="section-title" data-i18n="services.title">Yang bisa dikerjakan</h2>
                 </div>
             </div>
@@ -212,26 +270,36 @@
                             <span class="service-index-photo"><img src="assets/1.png" alt="" /></span>
                             <span class="service-name" data-i18n="services.items.0.name">Web Development</span>
                         </div>
-                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p data-i18n="services.items.0.desc">Membangun website dan web app dari nol dengan pendekatan modern. Fokus pada performa, aksesibilitas, dan pengalaman pengguna yang optimal. Menggunakan framework terbaru untuk hasil yang scalable dan mudah dipelihara.</p>
+                            <p data-i18n="services.items.0.desc">Membangun website dan web app dari nol dengan
+                                pendekatan modern. Fokus pada performa, aksesibilitas, dan pengalaman pengguna yang
+                                optimal. Menggunakan framework terbaru untuk hasil yang scalable dan mudah dipelihara.
+                            </p>
                             <div class="service-stack">
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/react" alt="" />React</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nextdotjs" alt="" />Next.js</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vuedotjs" alt="" />Vue.js</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript" alt="" />TypeScript</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/react"
+                                        alt="" />React</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nextdotjs"
+                                        alt="" />Next.js</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vuedotjs"
+                                        alt="" />Vue.js</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript"
+                                        alt="" />TypeScript</span>
                             </div>
                         </div>
                         <div class="service-illustration" aria-hidden="true">
                             <svg viewBox="0 0 160 110" fill="none">
-                                <rect x="10" y="14" width="66" height="90" rx="14" fill="#F4F3EE" stroke="#2C2C2A"/>
-                                <rect x="48" y="0" width="66" height="90" rx="14" fill="#FFFFFF" stroke="#2C2C2A"/>
-                                <rect x="56" y="10" width="50" height="14" rx="4" fill="#E4E2DA"/>
-                                <rect x="56" y="30" width="50" height="8" rx="4" fill="#E4E2DA"/>
-                                <rect x="56" y="44" width="34" height="8" rx="4" fill="#E4E2DA"/>
-                                <circle cx="130" cy="30" r="18" fill="#22C55E" opacity="0.15"/>
+                                <rect x="10" y="14" width="66" height="90" rx="14" fill="#F4F3EE" stroke="#2C2C2A" />
+                                <rect x="48" y="0" width="66" height="90" rx="14" fill="#FFFFFF" stroke="#2C2C2A" />
+                                <rect x="56" y="10" width="50" height="14" rx="4" fill="#E4E2DA" />
+                                <rect x="56" y="30" width="50" height="8" rx="4" fill="#E4E2DA" />
+                                <rect x="56" y="44" width="34" height="8" rx="4" fill="#E4E2DA" />
+                                <circle cx="130" cy="30" r="18" fill="#22C55E" opacity="0.15" />
                             </svg>
                         </div>
                     </div>
@@ -244,30 +312,39 @@
                             <span class="service-index-photo"><img src="assets/2.png" alt="" /></span>
                             <span class="service-name" data-i18n="services.items.1.name">Backend &amp; API</span>
                         </div>
-                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p data-i18n="services.items.1.desc">Merancang dan mengembangkan RESTful API serta sistem backend yang aman, terukur, dan efisien. Menerapkan best practice seperti autentikasi JWT, caching, dan optimasi query database untuk performa maksimal.</p>
+                            <p data-i18n="services.items.1.desc">Merancang dan mengembangkan RESTful API serta sistem
+                                backend yang aman, terukur, dan efisien. Menerapkan best practice seperti autentikasi
+                                JWT, caching, dan optimasi query database untuk performa maksimal.</p>
                             <div class="service-stack">
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nodedotjs" alt="" />Node.js</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/laravel" alt="" />Laravel</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/postgresql" alt="" />PostgreSQL</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/redis" alt="" />Redis</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nodedotjs"
+                                        alt="" />Node.js</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/laravel"
+                                        alt="" />Laravel</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/postgresql"
+                                        alt="" />PostgreSQL</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/redis"
+                                        alt="" />Redis</span>
                             </div>
                         </div>
                         <div class="service-illustration" aria-hidden="true">
                             <svg viewBox="0 0 160 110" fill="none">
-                                <rect x="14" y="8" width="110" height="24" rx="7" fill="#FFFFFF" stroke="#2C2C2A"/>
-                                <circle cx="26" cy="20" r="3" fill="#3B82F6"/>
-                                <rect x="38" y="16" width="60" height="8" rx="4" fill="#E4E2DA"/>
-                                <rect x="14" y="40" width="110" height="24" rx="7" fill="#F4F3EE" stroke="#2C2C2A"/>
-                                <circle cx="26" cy="52" r="3" fill="#3B82F6"/>
-                                <rect x="38" y="48" width="60" height="8" rx="4" fill="#E4E2DA"/>
-                                <rect x="14" y="72" width="110" height="24" rx="7" fill="#FFFFFF" stroke="#2C2C2A"/>
-                                <circle cx="26" cy="84" r="3" fill="#3B82F6"/>
-                                <rect x="38" y="80" width="60" height="8" rx="4" fill="#E4E2DA"/>
-                                <circle cx="138" cy="30" r="16" fill="#3B82F6" opacity="0.15"/>
+                                <rect x="14" y="8" width="110" height="24" rx="7" fill="#FFFFFF" stroke="#2C2C2A" />
+                                <circle cx="26" cy="20" r="3" fill="#3B82F6" />
+                                <rect x="38" y="16" width="60" height="8" rx="4" fill="#E4E2DA" />
+                                <rect x="14" y="40" width="110" height="24" rx="7" fill="#F4F3EE" stroke="#2C2C2A" />
+                                <circle cx="26" cy="52" r="3" fill="#3B82F6" />
+                                <rect x="38" y="48" width="60" height="8" rx="4" fill="#E4E2DA" />
+                                <rect x="14" y="72" width="110" height="24" rx="7" fill="#FFFFFF" stroke="#2C2C2A" />
+                                <circle cx="26" cy="84" r="3" fill="#3B82F6" />
+                                <rect x="38" y="80" width="60" height="8" rx="4" fill="#E4E2DA" />
+                                <circle cx="138" cy="30" r="16" fill="#3B82F6" opacity="0.15" />
                             </svg>
                         </div>
                     </div>
@@ -280,27 +357,38 @@
                             <span class="service-index-photo"><img src="assets/3.png" alt="" /></span>
                             <span class="service-name" data-i18n="services.items.2.name">UI Implementation</span>
                         </div>
-                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p data-i18n="services.items.2.desc">Menerjemahkan desain Figma menjadi antarmuka pixel-perfect dengan animasi halus dan interaksi yang responsif. Memastikan konsistensi visual di semua perangkat dan browser dengan pendekatan mobile-first.</p>
+                            <p data-i18n="services.items.2.desc">Menerjemahkan desain Figma menjadi antarmuka
+                                pixel-perfect dengan animasi halus dan interaksi yang responsif. Memastikan konsistensi
+                                visual di semua perangkat dan browser dengan pendekatan mobile-first.</p>
                             <div class="service-stack">
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/figma" alt="" />Figma</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/framer" alt="" />Framer Motion</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" />CSS</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/figma"
+                                        alt="" />Figma</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss"
+                                        alt="" />Tailwind</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/framer"
+                                        alt="" />Framer Motion</span>
+                                <span class="tag"><img class="tag-icon"
+                                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                                        alt="" />CSS</span>
                             </div>
                         </div>
                         <div class="service-illustration" aria-hidden="true">
                             <svg viewBox="0 0 160 110" fill="none">
-                                <rect x="10" y="10" width="90" height="70" rx="12" fill="#FFFFFF" stroke="#2C2C2A"/>
-                                <rect x="18" y="20" width="74" height="10" rx="5" fill="#E4E2DA"/>
-                                <circle cx="30" cy="52" r="10" fill="#F472B6" opacity="0.9"/>
-                                <circle cx="52" cy="52" r="10" fill="#FACC15" opacity="0.9"/>
-                                <circle cx="74" cy="52" r="10" fill="#34D399" opacity="0.9"/>
-                                <path d="M96 66l14 14M110 66l-14 14" stroke="#2C2C2A" stroke-width="3" stroke-linecap="round" transform="translate(20 -10)"/>
-                                <circle cx="132" cy="26" r="16" fill="#F472B6" opacity="0.15"/>
+                                <rect x="10" y="10" width="90" height="70" rx="12" fill="#FFFFFF" stroke="#2C2C2A" />
+                                <rect x="18" y="20" width="74" height="10" rx="5" fill="#E4E2DA" />
+                                <circle cx="30" cy="52" r="10" fill="#F472B6" opacity="0.9" />
+                                <circle cx="52" cy="52" r="10" fill="#FACC15" opacity="0.9" />
+                                <circle cx="74" cy="52" r="10" fill="#34D399" opacity="0.9" />
+                                <path d="M96 66l14 14M110 66l-14 14" stroke="#2C2C2A" stroke-width="3"
+                                    stroke-linecap="round" transform="translate(20 -10)" />
+                                <circle cx="132" cy="26" r="16" fill="#F472B6" opacity="0.15" />
                             </svg>
                         </div>
                     </div>
@@ -313,25 +401,37 @@
                             <span class="service-index-photo"><img src="assets/4.png" alt="" /></span>
                             <span class="service-name" data-i18n="services.items.3.name">Performance &amp; Deploy</span>
                         </div>
-                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
+                        <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212"
+                                stroke-width="2.5" stroke-linecap="round">
+                                <path d="M6 9l6 6 6-6" />
+                            </svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p data-i18n="services.items.3.desc">Mengoptimalkan kecepatan loading website melalui teknik seperti code splitting, lazy loading, image optimization, dan caching. Menyiapkan alur deployment yang stabil dengan CI/CD dan containerization.</p>
+                            <p data-i18n="services.items.3.desc">Mengoptimalkan kecepatan loading website melalui teknik
+                                seperti code splitting, lazy loading, image optimization, dan caching. Menyiapkan alur
+                                deployment yang stabil dengan CI/CD dan containerization.</p>
                             <div class="service-stack">
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/docker" alt="" />Docker</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/githubactions" alt="" />CI/CD</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vercel" alt="" />Vercel</span>
-                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/cloudflare" alt="" />Cloudflare</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/docker"
+                                        alt="" />Docker</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/githubactions"
+                                        alt="" />CI/CD</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vercel"
+                                        alt="" />Vercel</span>
+                                <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/cloudflare"
+                                        alt="" />Cloudflare</span>
                             </div>
                         </div>
                         <div class="service-illustration" aria-hidden="true">
                             <svg viewBox="0 0 160 110" fill="none">
-                                <path d="M40 96 L70 20 L100 96" stroke="#2C2C2A" stroke-width="3" fill="#FFFFFF" stroke-linejoin="round"/>
-                                <circle cx="70" cy="48" r="9" fill="#F4F3EE" stroke="#2C2C2A" stroke-width="2.5"/>
-                                <path d="M52 96 L40 110 M88 96 L100 110" stroke="#2C2C2A" stroke-width="3" stroke-linecap="round"/>
-                                <path d="M112 30 L120 22 M120 40 L130 40 M112 50 L120 58" stroke="#22C55E" stroke-width="3" stroke-linecap="round"/>
-                                <circle cx="130" cy="70" r="16" fill="#22C55E" opacity="0.15"/>
+                                <path d="M40 96 L70 20 L100 96" stroke="#2C2C2A" stroke-width="3" fill="#FFFFFF"
+                                    stroke-linejoin="round" />
+                                <circle cx="70" cy="48" r="9" fill="#F4F3EE" stroke="#2C2C2A" stroke-width="2.5" />
+                                <path d="M52 96 L40 110 M88 96 L100 110" stroke="#2C2C2A" stroke-width="3"
+                                    stroke-linecap="round" />
+                                <path d="M112 30 L120 22 M120 40 L130 40 M112 50 L120 58" stroke="#22C55E"
+                                    stroke-width="3" stroke-linecap="round" />
+                                <circle cx="130" cy="70" r="16" fill="#22C55E" opacity="0.15" />
                             </svg>
                         </div>
                     </div>
@@ -347,7 +447,8 @@
             <div class="experience-inner reveal">
                 <div class="section-head" style="margin-bottom: 36px;">
                     <div>
-                        <p class="section-label"><span class="idx">//</span> <span data-i18n="experience.label">experience</span></p>
+                        <p class="section-label"><span class="idx">//</span> <span
+                                data-i18n="experience.label">experience</span></p>
                         <h2 class="section-title" data-i18n="experience.title">Perjalanan karier</h2>
                     </div>
                     <span class="experience-years mono" data-i18n="experience.years">5+ tahun pengalaman</span>
@@ -356,7 +457,8 @@
                 <div class="exp-row">
                     <div>
                         <p class="exp-company" data-i18n="experience.items.0.company">Kampus Politeknik Negeri Bali</p>
-                        <p class="exp-role" data-i18n="experience.items.0.role">Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak</p>
+                        <p class="exp-role" data-i18n="experience.items.0.role">Mahasiswa D4 Teknologi Rekayasa
+                            Perangkat Lunak</p>
                     </div>
                     <p class="exp-date mono" data-i18n="experience.items.0.date">2024 — Sekarang</p>
                 </div>
@@ -371,8 +473,10 @@
 
                 <div class="exp-row">
                     <div>
-                        <p class="exp-company" data-i18n="experience.items.2.company">GRED (Robotika SMK TI Bali Global)</p>
-                        <p class="exp-role" data-i18n="experience.items.2.role">Pengurus Robotika (Divisi Line Follower dan Tim Kreatif)</p>
+                        <p class="exp-company" data-i18n="experience.items.2.company">GRED (Robotika SMK TI Bali Global)
+                        </p>
+                        <p class="exp-role" data-i18n="experience.items.2.role">Pengurus Robotika (Divisi Line Follower
+                            dan Tim Kreatif)</p>
                     </div>
                     <p class="exp-date mono" data-i18n="experience.items.2.date">2023</p>
                 </div>
@@ -388,7 +492,8 @@
                 <div class="exp-row">
                     <div>
                         <p class="exp-company" data-i18n="experience.items.4.company">SMK TI Bali Global Denpasar</p>
-                        <p class="exp-role" data-i18n="experience.items.4.role">Siswa Jurusan Rekayasa Perangkat Lunak</p>
+                        <p class="exp-role" data-i18n="experience.items.4.role">Siswa Jurusan Rekayasa Perangkat Lunak
+                        </p>
                     </div>
                     <p class="exp-date mono" data-i18n="experience.items.4.date">2021 — 2024</p>
                 </div>
@@ -403,11 +508,16 @@
                 <span class="status-dot"></span>
                 <span data-i18n="contact.status">Tersedia untuk proyek baru</span>
             </div>
-            <h2 class="contact-title reveal" data-i18n="contact.title">Siap membawa bisnis Anda ke tingkat berikutnya?</h2>
-            <p class="contact-desc reveal" data-i18n="contact.desc">Mari berdiskusi untuk membangun website yang responsif, cepat, dan siap membantu mengembangkan bisnis Anda.</p>
-            <a href="https://wa.me/6287718048166?text=Halo%20Santika%2C%20perkenalkan%20saya%20%5Bnama%5D.%20Saya%20tertarik%20untuk%20mendiskusikan%20sebuah%20proyek%20web.%20Apakah%20kamu%20saat%20ini%20available%20untuk%20project%20baru%3F" target="_blank" rel="noopener" class="btn btn-dark reveal" data-i18n="contact.cta">
+            <h2 class="contact-title reveal" data-i18n="contact.title">Siap membawa bisnis Anda ke tingkat berikutnya?
+            </h2>
+            <p class="contact-desc reveal" data-i18n="contact.desc">Mari berdiskusi untuk membangun website yang
+                responsif, cepat, dan siap membantu mengembangkan bisnis Anda.</p>
+            <a href="https://wa.me/6287718048166?text=Halo%20Santika%2C%20perkenalkan%20saya%20%5Bnama%5D.%20Saya%20tertarik%20untuk%20mendiskusikan%20sebuah%20proyek%20web.%20Apakah%20kamu%20saat%20ini%20available%20untuk%20project%20baru%3F"
+                target="_blank" rel="noopener" class="btn btn-dark reveal" data-i18n="contact.cta">
                 Hubungi saya
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H9M17 7V15" />
+                </svg>
             </a>
 
             <div class="contact-footer reveal">
@@ -416,15 +526,26 @@
                     Santika Kumara
                 </span>
                 <a href="https://github.com/urboysann" target="_blank" rel="noopener" class="pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18v3.23c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18v3.23c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z" />
+                    </svg>
                     <span data-i18n="social.github.label">GitHub</span>
                 </a>
                 <a href="https://www.linkedin.com/in/santikakumara/" target="_blank" rel="noopener" class="pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+                    </svg>
                     <span data-i18n="social.linkedin.label">LinkedIn</span>
                 </a>
                 <a href="https://instagram.com/santikakumara" target="_blank" rel="noopener" class="pill">
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="2" width="20" height="20" rx="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                    </svg>
                     <span data-i18n="social.instagram.label">Instagram</span>
                 </a>
             </div>
@@ -433,14 +554,17 @@
 
     <!-- ============================== FOOTER ============================== -->
     <footer class="footer-strip">
-        <span>© <span id="year"></span> Santika Kumara. <span data-i18n="footer.rights">Semua hak dilindungi.</span></span>
+        <span>© <span id="year"></span> Santika Kumara. <span data-i18n="footer.rights">Semua hak
+                dilindungi.</span></span>
     </footer>
 
     <!-- ============================== MODAL (slide-in panel) ============================== -->
     <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-panel">
             <button class="modal-close" id="modalClose" aria-label="Tutup detail proyek">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+                    <path d="M18 6L6 18M6 6l12 12" />
+                </svg>
             </button>
             <div class="modal-scroll">
                 <div class="modal-image-wrap">
@@ -452,14 +576,21 @@
                     <p class="modal-desc" id="modalDesc">Deskripsi proyek</p>
 
                     <p class="modal-tech-label mono">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6" />
+                            <polyline points="8 6 2 12 8 18" />
+                        </svg>
                         <span data-i18n="modal.tech">Teknologi digunakan</span>
                     </p>
                     <div class="modal-tags" id="modalTags"></div>
 
-                    <a href="#" class="btn btn-dark modal-link" id="modalLink" target="_blank" rel="noopener" data-i18n="modal.cta">
+                    <a href="#" class="btn btn-dark modal-link" id="modalLink" target="_blank" rel="noopener"
+                        data-i18n="modal.cta">
                         Lihat proyek
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M7 17L17 7M17 7H9M17 7V15" />
+                        </svg>
                     </a>
                 </div>
             </div>
@@ -472,4 +603,5 @@
     </script>
     <script src="js/script.js"></script>
 </body>
+
 </html>
