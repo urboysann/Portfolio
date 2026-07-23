@@ -17,34 +17,39 @@
 
     <!-- ============================== INTRO OVERLAY ============================== -->
     <div class="intro-overlay" id="introOverlay" role="dialog" aria-label="Layar sambutan">
-        <p class="intro-eyebrow mono">$ portfolio --init</p>
-
+        <p class="intro-eyebrow mono" data-i18n="intro.eyebrow">$ portfolio --init</p>
         <div class="intro-word-wrap">
             <span class="intro-word" id="introWord"></span>
         </div>
     </div>
-
 
     <!-- ============================== NAV ============================== -->
     <header class="nav" id="nav">
         <div class="container nav-inner">
             <div class="status-badge">
                 <span class="status-dot"></span>
-                Available for new projects
+                <span data-i18n="nav.status">Tersedia untuk proyek baru</span>
             </div>
 
             <nav class="nav-links" id="navLinks">
-                <a href="#work">Work <sup>[04]</sup></a>
-                <a href="#services">Services <sup>[04]</sup></a>
-                <a href="#experience">Experience <sup>[5y+]</sup></a>
-                <a href="#contact">Contact</a>
+                <a href="#work" data-i18n="nav.work">Proyek <sup>[04]</sup></a>
+                <a href="#services" data-i18n="nav.services">Layanan <sup>[04]</sup></a>
+                <a href="#experience" data-i18n="nav.experience">Pengalaman <sup>[5y+]</sup></a>
+                <a href="#contact" data-i18n="nav.contact">Kontak</a>
             </nav>
 
             <div class="nav-cta">
-                <a href="#contact" class="btn btn-dark">
-                    Let's talk
+                <a href="#contact" class="btn btn-dark" data-i18n="nav.cta">
+                    Hubungi saya
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
                 </a>
+
+                <!-- ===== LANGUAGE SWITCHER ===== -->
+                <div class="lang-switcher" id="langSwitcher" role="group" aria-label="Pilih bahasa">
+                    <button class="lang-btn is-active" data-lang="id" aria-label="Bahasa Indonesia" title="Bahasa Indonesia">ID</button>
+                    <button class="lang-btn" data-lang="en" aria-label="English" title="English">EN</button>
+                </div>
+
                 <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
                     <span></span>
                 </button>
@@ -61,9 +66,9 @@
 
             <div class="hero-grid">
                 <div class="hero-left reveal">
-                    <p class="hero-role mono">role: Full-Stack Developer</p>
-                    <p class="hero-desc">Menghadirkan produk digital yang responsif dan terarsitektur rapi, menjamin pengalaman pengguna yang optimal dari desain awal hingga tahap deployment.</p>
-                    <a href="#work" class="btn btn-dark">
+                    <p class="hero-role mono" data-i18n="hero.role">role: Full-Stack Developer</p>
+                    <p class="hero-desc" data-i18n="hero.desc">Menghadirkan produk digital yang responsif dan terarsitektur rapi, menjamin pengalaman pengguna yang optimal dari desain awal hingga tahap deployment.</p>
+                    <a href="#work" class="btn btn-dark" data-i18n="hero.cta">
                         Lihat karya
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
                     </a>
@@ -77,21 +82,21 @@
                     <a href="https://github.com/urboysann" target="_blank" rel="noopener" class="pill">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18v3.23c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
                         <span class="pill-text">
-                            <span class="pill-label">GitHub</span>
+                            <span class="pill-label" data-i18n="social.github.label">GitHub</span>
                             <span class="pill-handle">@urboysann</span>
                         </span>
                     </a>
                     <a href="https://www.linkedin.com/in/santikakumara/" target="_blank" rel="noopener" class="pill">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
                         <span class="pill-text">
-                            <span class="pill-label">LinkedIn</span>
+                            <span class="pill-label" data-i18n="social.linkedin.label">LinkedIn</span>
                             <span class="pill-handle">@santikakumara</span>
                         </span>
                     </a>
                     <a href="https://instagram.com/santikakumara" target="_blank" rel="noopener" class="pill">
                         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
                         <span class="pill-text">
-                            <span class="pill-label">Instagram</span>
+                            <span class="pill-label" data-i18n="social.instagram.label">Instagram</span>
                             <span class="pill-handle">@santikakumara</span>
                         </span>
                     </a>
@@ -106,13 +111,13 @@
         <div class="container">
             <div class="section-head reveal">
                 <div>
-                    <p class="section-label"><span class="idx">//</span> selected work</p>
-                    <h2 class="section-title">Proyek pilihan</h2>
+                    <p class="section-label"><span class="idx">//</span> <span data-i18n="work.label">selected work</span></p>
+                    <h2 class="section-title" data-i18n="work.title">Proyek pilihan</h2>
                 </div>
                 <div class="work-filters">
-                    <button class="filter-btn is-active" data-filter="all">Semua</button>
-                    <button class="filter-btn" data-filter="product">Produk</button>
-                    <button class="filter-btn" data-filter="exploration">Eksplorasi</button>
+                    <button class="filter-btn is-active" data-filter="all" data-i18n="work.filter.all">Semua</button>
+                    <button class="filter-btn" data-filter="product" data-i18n="work.filter.product">Produk</button>
+                    <button class="filter-btn" data-filter="exploration" data-i18n="work.filter.exploration">Eksplorasi</button>
                 </div>
             </div>
 
@@ -121,11 +126,11 @@
                 <article class="work-card reveal" data-cat="product" data-project="0">
                     <button class="work-thumb" data-project="0" aria-label="Buka detail proyek">
                         <img src="assets/eagles.jpeg" alt="PNBEAGLES SEASON 9" loading="lazy" />
-                        <span class="work-badge mono">product</span>
+                        <span class="work-badge mono" data-i18n="work.badge.product">product</span>
                         <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
                     </button>
                     <div class="work-body">
-                        <h3 class="work-title">PNB EAGLES SEASON 9 — E-Sports Tournament</h3>
+                        <h3 class="work-title" data-i18n="projects.0.title">PNB EAGLES SEASON 9 — E-Sports Tournament</h3>
                         <div class="work-tags">
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nextdotjs" alt="" />Next.js</span>
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
@@ -138,11 +143,11 @@
                 <article class="work-card reveal" data-cat="product" data-project="1">
                     <button class="work-thumb" data-project="1" aria-label="Buka detail proyek">
                         <img src="assets/intechfest.jpeg" alt="IntechFest" loading="lazy" />
-                        <span class="work-badge mono">product</span>
+                        <span class="work-badge mono" data-i18n="work.badge.product">product</span>
                         <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
                     </button>
                     <div class="work-body">
-                        <h3 class="work-title">IntechFest — Festival Teknologi</h3>
+                        <h3 class="work-title" data-i18n="projects.1.title">IntechFest — Festival Teknologi</h3>
                         <div class="work-tags">
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/laravel" alt="" />Laravel</span>
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
@@ -155,11 +160,11 @@
                 <article class="work-card reveal" data-cat="exploration" data-project="2">
                     <button class="work-thumb" data-project="2" aria-label="Buka detail proyek">
                         <img src="assets/melahin.jpeg" alt="IMelahin.id" loading="lazy" />
-                        <span class="work-badge mono">exploration</span>
+                        <span class="work-badge mono" data-i18n="work.badge.exploration">exploration</span>
                         <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
                     </button>
                     <div class="work-body">
-                        <h3 class="work-title">Melahin.id — Manajemen Sampah</h3>
+                        <h3 class="work-title" data-i18n="projects.2.title">Melahin.id — Manajemen Sampah</h3>
                         <div class="work-tags">
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/html5" alt="" />HTML</span>
                             <span class="tag"><img class="tag-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" />CSS</span>
@@ -172,11 +177,11 @@
                 <article class="work-card reveal" data-cat="product" data-project="3">
                     <button class="work-thumb" data-project="3" aria-label="Buka detail proyek">
                         <img src="assets/webcom.jpeg" alt="Web Community" loading="lazy" />
-                        <span class="work-badge mono">product</span>
+                        <span class="work-badge mono" data-i18n="work.badge.product">product</span>
                         <span class="work-arrow"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg></span>
                     </button>
                     <div class="work-body">
-                        <h3 class="work-title">Web Community — Komunitas Developer</h3>
+                        <h3 class="work-title" data-i18n="projects.3.title">Web Community — Komunitas Developer</h3>
                         <div class="work-tags">
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/vuedotjs" alt="" />Vue.js</span>
                             <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/typescript" alt="" />TypeScript</span>
@@ -194,8 +199,8 @@
         <div class="container">
             <div class="section-head reveal">
                 <div>
-                    <p class="section-label"><span class="idx">//</span> services</p>
-                    <h2 class="section-title">Yang bisa dikerjakan</h2>
+                    <p class="section-label"><span class="idx">//</span> <span data-i18n="services.label">services</span></p>
+                    <h2 class="section-title" data-i18n="services.title">Yang bisa dikerjakan</h2>
                 </div>
             </div>
 
@@ -205,13 +210,13 @@
                     <button class="service-trigger">
                         <div class="service-name-row">
                             <span class="service-index-photo"><img src="assets/1.png" alt="" /></span>
-                            <span class="service-name">Web Development</span>
+                            <span class="service-name" data-i18n="services.items.0.name">Web Development</span>
                         </div>
                         <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p>Membangun website dan web app dari nol dengan pendekatan modern. Fokus pada performa, aksesibilitas, dan pengalaman pengguna yang optimal. Menggunakan framework terbaru untuk hasil yang scalable dan mudah dipelihara.</p>
+                            <p data-i18n="services.items.0.desc">Membangun website dan web app dari nol dengan pendekatan modern. Fokus pada performa, aksesibilitas, dan pengalaman pengguna yang optimal. Menggunakan framework terbaru untuk hasil yang scalable dan mudah dipelihara.</p>
                             <div class="service-stack">
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/react" alt="" />React</span>
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nextdotjs" alt="" />Next.js</span>
@@ -237,13 +242,13 @@
                     <button class="service-trigger">
                         <div class="service-name-row">
                             <span class="service-index-photo"><img src="assets/2.png" alt="" /></span>
-                            <span class="service-name">Backend &amp; API</span>
+                            <span class="service-name" data-i18n="services.items.1.name">Backend &amp; API</span>
                         </div>
                         <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p>Merancang dan mengembangkan RESTful API serta sistem backend yang aman, terukur, dan efisien. Menerapkan best practice seperti autentikasi JWT, caching, dan optimasi query database untuk performa maksimal.</p>
+                            <p data-i18n="services.items.1.desc">Merancang dan mengembangkan RESTful API serta sistem backend yang aman, terukur, dan efisien. Menerapkan best practice seperti autentikasi JWT, caching, dan optimasi query database untuk performa maksimal.</p>
                             <div class="service-stack">
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/nodedotjs" alt="" />Node.js</span>
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/laravel" alt="" />Laravel</span>
@@ -273,13 +278,13 @@
                     <button class="service-trigger">
                         <div class="service-name-row">
                             <span class="service-index-photo"><img src="assets/3.png" alt="" /></span>
-                            <span class="service-name">UI Implementation</span>
+                            <span class="service-name" data-i18n="services.items.2.name">UI Implementation</span>
                         </div>
                         <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p>Menerjemahkan desain Figma menjadi antarmuka pixel-perfect dengan animasi halus dan interaksi yang responsif. Memastikan konsistensi visual di semua perangkat dan browser dengan pendekatan mobile-first.</p>
+                            <p data-i18n="services.items.2.desc">Menerjemahkan desain Figma menjadi antarmuka pixel-perfect dengan animasi halus dan interaksi yang responsif. Memastikan konsistensi visual di semua perangkat dan browser dengan pendekatan mobile-first.</p>
                             <div class="service-stack">
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/figma" alt="" />Figma</span>
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/tailwindcss" alt="" />Tailwind</span>
@@ -306,13 +311,13 @@
                     <button class="service-trigger">
                         <div class="service-name-row">
                             <span class="service-index-photo"><img src="assets/4.png" alt="" /></span>
-                            <span class="service-name">Performance &amp; Deploy</span>
+                            <span class="service-name" data-i18n="services.items.3.name">Performance &amp; Deploy</span>
                         </div>
                         <span class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#121212" stroke-width="2.5" stroke-linecap="round"><path d="M6 9l6 6 6-6"/></svg></span>
                     </button>
                     <div class="service-panel">
                         <div class="service-panel-inner">
-                            <p>Mengoptimalkan kecepatan loading website melalui teknik seperti code splitting, lazy loading, image optimization, dan caching. Menyiapkan alur deployment yang stabil dengan CI/CD dan containerization.</p>
+                            <p data-i18n="services.items.3.desc">Mengoptimalkan kecepatan loading website melalui teknik seperti code splitting, lazy loading, image optimization, dan caching. Menyiapkan alur deployment yang stabil dengan CI/CD dan containerization.</p>
                             <div class="service-stack">
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/docker" alt="" />Docker</span>
                                 <span class="tag"><img class="tag-icon" src="https://cdn.simpleicons.org/githubactions" alt="" />CI/CD</span>
@@ -342,50 +347,50 @@
             <div class="experience-inner reveal">
                 <div class="section-head" style="margin-bottom: 36px;">
                     <div>
-                        <p class="section-label"><span class="idx">//</span> experience</p>
-                        <h2 class="section-title">Perjalanan karier</h2>
+                        <p class="section-label"><span class="idx">//</span> <span data-i18n="experience.label">experience</span></p>
+                        <h2 class="section-title" data-i18n="experience.title">Perjalanan karier</h2>
                     </div>
-                    <span class="experience-years mono">5+ tahun pengalaman</span>
+                    <span class="experience-years mono" data-i18n="experience.years">5+ tahun pengalaman</span>
                 </div>
 
                 <div class="exp-row">
                     <div>
-                        <p class="exp-company">Kampus Politeknik Negeri Bali</p>
-                        <p class="exp-role">Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak</p>
+                        <p class="exp-company" data-i18n="experience.items.0.company">Kampus Politeknik Negeri Bali</p>
+                        <p class="exp-role" data-i18n="experience.items.0.role">Mahasiswa D4 Teknologi Rekayasa Perangkat Lunak</p>
                     </div>
-                    <p class="exp-date mono">2024 — Sekarang</p>
+                    <p class="exp-date mono" data-i18n="experience.items.0.date">2024 — Sekarang</p>
                 </div>
 
                 <div class="exp-row">
                     <div>
-                        <p class="exp-company">UKM Computer Club</p>
-                        <p class="exp-role">Fungsionaris Divisi Web Development</p>
+                        <p class="exp-company" data-i18n="experience.items.1.company">UKM Computer Club</p>
+                        <p class="exp-role" data-i18n="experience.items.1.role">Fungsionaris Divisi Web Development</p>
                     </div>
-                    <p class="exp-date mono">2024 — Sekarang</p>
+                    <p class="exp-date mono" data-i18n="experience.items.1.date">2024 — Sekarang</p>
                 </div>
 
                 <div class="exp-row">
                     <div>
-                        <p class="exp-company">GRED (Robotika SMK TI Bali Global)</p>
-                        <p class="exp-role">Pengurus Robotika (Divisi Line Follower dan Tim Kreatif)</p>
+                        <p class="exp-company" data-i18n="experience.items.2.company">GRED (Robotika SMK TI Bali Global)</p>
+                        <p class="exp-role" data-i18n="experience.items.2.role">Pengurus Robotika (Divisi Line Follower dan Tim Kreatif)</p>
                     </div>
-                    <p class="exp-date mono">2023</p>
+                    <p class="exp-date mono" data-i18n="experience.items.2.date">2023</p>
                 </div>
 
                 <div class="exp-row">
                     <div>
-                        <p class="exp-company">PT Baliola Adi Maha Duta</p>
-                        <p class="exp-role">Internship (Full-Stack Developer)</p>
+                        <p class="exp-company" data-i18n="experience.items.3.company">PT Baliola Adi Maha Duta</p>
+                        <p class="exp-role" data-i18n="experience.items.3.role">Internship (Full-Stack Developer)</p>
                     </div>
-                    <p class="exp-date mono">2023</p>
+                    <p class="exp-date mono" data-i18n="experience.items.3.date">2023</p>
                 </div>
 
                 <div class="exp-row">
                     <div>
-                        <p class="exp-company">SMK TI Bali Global Denpasar</p>
-                        <p class="exp-role">Siswa Jurusan Rekayasa Perangkat Lunak</p>
+                        <p class="exp-company" data-i18n="experience.items.4.company">SMK TI Bali Global Denpasar</p>
+                        <p class="exp-role" data-i18n="experience.items.4.role">Siswa Jurusan Rekayasa Perangkat Lunak</p>
                     </div>
-                    <p class="exp-date mono">2021 — 2024</p>
+                    <p class="exp-date mono" data-i18n="experience.items.4.date">2021 — 2024</p>
                 </div>
             </div>
         </div>
@@ -396,11 +401,11 @@
         <div class="container">
             <div class="status-badge reveal">
                 <span class="status-dot"></span>
-                Available for new projects
+                <span data-i18n="contact.status">Tersedia untuk proyek baru</span>
             </div>
-            <h2 class="contact-title reveal">Siap membawa bisnis Anda ke tingkat berikutnya?</h2>
-            <p class="contact-desc reveal">Mari berdiskusi untuk membangun website yang responsif, cepat, dan siap membantu mengembangkan bisnis Anda.</p>
-            <a href="https://wa.me/6287718048166?text=Halo%20Santika%2C%20perkenalkan%20saya%20%5Bnama%5D.%20Saya%20tertarik%20untuk%20mendiskusikan%20sebuah%20proyek%20web.%20Apakah%20kamu%20saat%20ini%20available%20untuk%20project%20baru%3F" target="_blank" rel="noopener" class="btn btn-dark reveal">
+            <h2 class="contact-title reveal" data-i18n="contact.title">Siap membawa bisnis Anda ke tingkat berikutnya?</h2>
+            <p class="contact-desc reveal" data-i18n="contact.desc">Mari berdiskusi untuk membangun website yang responsif, cepat, dan siap membantu mengembangkan bisnis Anda.</p>
+            <a href="https://wa.me/6287718048166?text=Halo%20Santika%2C%20perkenalkan%20saya%20%5Bnama%5D.%20Saya%20tertarik%20untuk%20mendiskusikan%20sebuah%20proyek%20web.%20Apakah%20kamu%20saat%20ini%20available%20untuk%20project%20baru%3F" target="_blank" rel="noopener" class="btn btn-dark reveal" data-i18n="contact.cta">
                 Hubungi saya
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
             </a>
@@ -412,15 +417,15 @@
                 </span>
                 <a href="https://github.com/urboysann" target="_blank" rel="noopener" class="pill">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.9.57.1.78-.25.78-.55v-2.1c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.18 1.18a11 11 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.08 0 4.43-2.7 5.4-5.27 5.68.42.36.78 1.08.78 2.18v3.23c0 .3.21.66.79.55A10.52 10.52 0 0 0 23.5 12c0-6.27-5.23-11.5-11.5-11.5Z"/></svg>
-                    GitHub
+                    <span data-i18n="social.github.label">GitHub</span>
                 </a>
                 <a href="https://www.linkedin.com/in/santikakumara/" target="_blank" rel="noopener" class="pill">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"/></svg>
-                    LinkedIn
+                    <span data-i18n="social.linkedin.label">LinkedIn</span>
                 </a>
                 <a href="https://instagram.com/santikakumara" target="_blank" rel="noopener" class="pill">
                     <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-                    Instagram
+                    <span data-i18n="social.instagram.label">Instagram</span>
                 </a>
             </div>
         </div>
@@ -428,10 +433,10 @@
 
     <!-- ============================== FOOTER ============================== -->
     <footer class="footer-strip">
-        <span>© <span id="year"></span> Santika Kumara. Semua hak dilindungi.</span>
+        <span>© <span id="year"></span> Santika Kumara. <span data-i18n="footer.rights">Semua hak dilindungi.</span></span>
     </footer>
 
-    <!-- ============================== MODAL (slide-in panel, ref: passkeeper) ============================== -->
+    <!-- ============================== MODAL (slide-in panel) ============================== -->
     <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
         <div class="modal-panel">
             <button class="modal-close" id="modalClose" aria-label="Tutup detail proyek">
@@ -448,11 +453,11 @@
 
                     <p class="modal-tech-label mono">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-                        Teknologi digunakan
+                        <span data-i18n="modal.tech">Teknologi digunakan</span>
                     </p>
                     <div class="modal-tags" id="modalTags"></div>
 
-                    <a href="#" class="btn btn-dark modal-link" id="modalLink" target="_blank" rel="noopener">
+                    <a href="#" class="btn btn-dark modal-link" id="modalLink" target="_blank" rel="noopener" data-i18n="modal.cta">
                         Lihat proyek
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
                     </a>
@@ -461,12 +466,10 @@
         </div>
     </div>
 
-    <script src="js/script.js"></script>
     <script src="libs/lenis/lenis.min.js"></script>
     <script>
-      const lenis = new Lenis({
-        autoRaf: true,
-      });
+        const lenis = new Lenis({ autoRaf: true });
     </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
