@@ -187,6 +187,20 @@ const projectsData = [{
     tags: ['Vue.js', 'TypeScript', 'Tailwind'],
     image: 'assets/webcom.jpeg',
     link: '#'
+}, {
+    title: 'KORA Lifestyle — E-Commerce',
+    badge: 'product',
+    desc: 'KORA Lifestyle adalah platform e-commerce modern berkonsep curated lifestyle. Website ini menyediakan katalog produk pilihan untuk kategori Beauty, Fashion, Home & Living, dan Accessories dengan antarmuka yang bersih, estetik, dan pengalaman pengguna (UX) yang responsif di berbagai perangkat.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: 'assets/E-Commerce.jpeg',
+    link: 'https://urboysann.github.io/KORA-Lifestyle-E-Commerce/'
+}, {
+    title: 'DevVerse Academy — EdTech Platform',
+    badge: 'product',
+    desc: 'DevVerse Academy adalah sebuah platform edukasi teknologi (EdTech) yang difokuskan pada pembelajaran programming, web development, dan software engineering. Website ini dibuat dengan mengutamakan performa, animasi yang mulus, serta antarmuka (UI) yang modern dan responsif.',
+    tags: ['HTML', 'CSS', 'JavaScript'],
+    image: 'assets/DevVerse.jpeg',
+    link: 'https://urboysann.github.io/DevVerse-Academy/'
 }];
 
 function openModal(index) {
@@ -316,8 +330,8 @@ document.getElementById('year').textContent = new Date().getFullYear();
             'intro.eyebrow': '$ portfolio --init',
             // Nav
             'nav.status': 'Tersedia untuk proyek baru',
-            'nav.work': 'Work <sup>[04]</sup>',
-            'nav.services': 'Services <sup>[04]</sup>',
+            'nav.work': 'Proyek <sup>[06]</sup>',
+            'nav.services': 'Layanan <sup>[04]</sup>',
             'nav.experience': 'Experience <sup>[5y+]</sup>',
             'nav.contact': 'Contact',
             'nav.cta': 'Let\'s talk',
@@ -339,6 +353,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
             'projects.2.desc': 'Platform berbasis website yang bertujuan untuk mengedukasi dan membantu masyarakat dalam pengelolaan sampah. IMelahin.id menyediakan informasi tentang jenis sampah, cara daur ulang, dan lokasi bank sampah terdekat. Proyek ini dibangun dengan HTML, CSS, dan JavaScript murni sebagai bentuk kepedulian terhadap lingkungan, khususnya mengatasi permasalahan sampah di Bali. Menampilkan data statistik real-time tentang volume sampah, partisipasi masyarakat, dan dampak lingkungan.',
             'projects.3.title': 'Web Community — Komunitas Developer',
             'projects.3.desc': 'Platform komunitas untuk para web developer di Bali yang bertujuan untuk berbagi pengetahuan, pengalaman, dan kolaborasi. Website ini menyediakan fitur forum diskusi, event meetup, sharing session, serta direktori anggota. Dibangun dengan Vue.js dan TypeScript untuk pengalaman pengguna yang interaktif dan kode yang terstruktur. Komunitas ini menjadi wadah bagi developer junior hingga senior untuk saling belajar dan mengembangkan karier di dunia web development.',
+            'projects.4.title': 'KORA Lifestyle — E-Commerce',
+            'projects.4.desc': 'KORA Lifestyle adalah platform e-commerce modern berkonsep curated lifestyle. Website ini menyediakan katalog produk pilihan untuk kategori Beauty, Fashion, Home & Living, dan Accessories dengan antarmuka yang bersih, estetik, dan pengalaman pengguna (UX) yang responsif di berbagai perangkat.',
+            'projects.5.title': 'DevVerse Academy — EdTech Platform',
+            'projects.5.desc': 'DevVerse Academy adalah sebuah platform edukasi teknologi (EdTech) yang difokuskan pada pembelajaran programming, web development, dan software engineering. Website ini dibuat dengan mengutamakan performa, animasi yang mulus, serta antarmuka (UI) yang modern dan responsif.',
             // Services
             'services.label': 'services',
             'services.title': 'Yang bisa dikerjakan',
@@ -384,7 +402,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
             lang: '🇬🇧 EN',
             'intro.eyebrow': '$ portfolio --init',
             'nav.status': 'Available for new projects',
-            'nav.work': 'Work <sup>[04]</sup>',
+            'nav.work': 'Work <sup>[06]</sup>',
             'nav.services': 'Services <sup>[04]</sup>',
             'nav.experience': 'Experience <sup>[5y+]</sup>',
             'nav.contact': 'Contact',
@@ -405,6 +423,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
             'projects.2.desc': 'A website-based platform that aims to educate and assist the community in waste management. IMelahin.id provides information on types of waste, recycling methods, and the nearest waste bank locations. This project was built with pure HTML, CSS, and JavaScript as a form of care for the environment, especially overcoming waste problems in Bali. Displays real-time statistical data on waste volume, community participation, and environmental impact.',
             'projects.3.title': 'Web Community — Developer Community',
             'projects.3.desc': 'A community platform for web developers in Bali that aims to share knowledge, experiences, and collaborate. This website provides discussion forums, meetup events, sharing sessions, and a member directory. Built with Vue.js and TypeScript for an interactive user experience and structured code. This community is a place for junior to senior developers to learn from each other and develop their careers in web development.',
+            'projects.4.title': 'KORA Lifestyle — E-Commerce',
+            'projects.4.desc': 'KORA Lifestyle is a modern e-commerce platform with a curated lifestyle concept. This website provides a selected product catalog for Beauty, Fashion, Home & Living, and Accessories categories with a clean, aesthetic interface, and responsive user experience (UX) across various devices.',
+            'projects.5.title': 'DevVerse Academy — EdTech Platform',
+            'projects.5.desc': 'DevVerse Academy is a technology education platform (EdTech) focused on learning programming, web development, and software engineering. This website is built prioritizing performance, smooth animations, and a modern and responsive user interface (UI).',
             'services.label': 'services',
             'services.title': 'What I Can Do',
             'services.items.0.name': 'Web Development',
@@ -445,7 +467,7 @@ document.getElementById('year').textContent = new Date().getFullYear();
             lang: '🇯🇵 日本語',
             'intro.eyebrow': '$ portfolio --init',
             'nav.status': '新規プロジェクト受付中',
-            'nav.work': '作品 <sup>[04]</sup>',
+            'nav.work': '作品 <sup>[06]</sup>',
             'nav.services': 'サービス <sup>[04]</sup>',
             'nav.experience': '経歴 <sup>[5y+]</sup>',
             'nav.contact': 'お問い合わせ',
@@ -466,6 +488,10 @@ document.getElementById('year').textContent = new Date().getFullYear();
             'projects.2.desc': '廃棄物管理に関するコミュニティの教育と支援を目的としたWebベースのプラットフォーム。IMelahin.idは、廃棄物の種類、リサイクル方法、および最寄りの廃棄物バンクの場所に関する情報を提供します。このプロジェクトは、特にバリ島の廃棄物問題を克服するための環境への配慮の一環として、純粋なHTML、CSS、JavaScriptで構築されました。廃棄物の量、コミュニティの参加、環境への影響に関するリアルタイムの統計データを表示します。',
             'projects.3.title': 'Web Community — 開発者コミュニティ',
             'projects.3.desc': '知識や経験を共有し、協力することを目的としたバリ島のWeb開発者向けのコミュニティプラットフォーム。このWebサイトは、ディスカッションフォーラム、ミートアップイベント、共有セッション、メンバーディレクトリを提供します。インタラクティブなユーザー体験と構造化されたコードのためにVue.jsとTypeScriptで構築されています。このコミュニティは、ジュニアからシニアまでの開発者が互いに学び、Web開発のキャリアを発展させるための場所です。',
+            'projects.4.title': 'KORA Lifestyle — Eコマース',
+            'projects.4.desc': 'KORA Lifestyleは、厳選されたライフスタイルをコンセプトとしたモダンなEコマースプラットフォームです。このウェブサイトは、ビューティー、ファッション、ホーム＆リビング、アクセサリーの各カテゴリーで厳選された製品カタログを提供し、クリーンで美しいインターフェースと、さまざまなデバイスでレスポンシブなユーザーエクスペリエンス（UX）を実現しています。',
+            'projects.5.title': 'DevVerse Academy — EdTechプラットフォーム',
+            'projects.5.desc': 'DevVerse Academyは、プログラミング、Web開発、ソフトウェアエンジニアリングの学習に焦点を当てたテクノロジー教育プラットフォーム（EdTech）です。このウェブサイトは、パフォーマンス、スムーズなアニメーション、およびモダンでレスポンシブなユーザーインターフェース（UI）を優先して構築されています。',
             'services.label': 'サービス',
             'services.title': '提供できるサービス',
             'services.svc0.name': 'Web開発',
