@@ -155,6 +155,9 @@ const techIconSlugs = {
 };
 
 function tagIconSrc(tagName) {
+    if (tagName === 'CSS') {
+        return 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg';
+    }
     const slug = techIconSlugs[tagName];
     return slug ? `https://cdn.simpleicons.org/${slug}` : '';
 }

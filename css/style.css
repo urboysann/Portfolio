@@ -945,6 +945,8 @@ section.experience {
     height: 26px;
     border-radius: 50%;
     object-fit: cover;
+    clip-path: circle(45% at 50% 50%);
+    transform: scale(1.1);
 }
 
 /* ==========================================================================
