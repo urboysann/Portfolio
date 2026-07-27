@@ -1,0 +1,65 @@
+PETUNJUK PENGGUNAAN WEBSITE PORTOFOLIO SANTIKA KUMARA
+
+Website ini adalah portofolio interaktif dari Santika Kumara, seorang Full-Stack Developer. Berikut adalah panduan untuk menggunakan fitur-fitur yang ada di dalam website.
+
+==================================================
+FITUR UTAMA & PENJELASAN
+==================================================
+
+1. Intro Animasi & Splash Screen
+   - Penjelasan: Layar sambutan ala terminal ("$ portfolio --init") yang muncul pertama kali saat website dimuat, memberikan kesan pertama yang interaktif bagi pengguna.
+
+2. Pilihan Bahasa (Language Switcher)
+   - Penjelasan: Memungkinkan pengunjung untuk mengubah bahasa antarmuka (ID untuk Bahasa Indonesia dan EN untuk Bahasa Inggris). Fitur ini menerjemahkan seluruh teks pada halaman secara langsung tanpa harus memuat ulang halaman.
+
+3. Navigasi Halus (Smooth Scroll & Sticky Header)
+   - Penjelasan: Navigasi utama ("Proyek", "Layanan", dll.) menempel di bagian atas layar (sticky). Saat menu diklik, layar akan menggulir secara mulus (smooth scroll) ke bagian yang dipilih.
+
+4. Filter Kategori Proyek
+   - Penjelasan: Sistem penyaringan (filtering) portofolio interaktif yang memisahkan proyek berdasarkan jenisnya ("Semua", "Produk", "Eksplorasi"), memudahkan pengunjung untuk menemukan karya spesifik dengan cepat.
+
+5. Jendela Detail Proyek (Modal)
+   - Penjelasan: Saat sebuah proyek diklik, detail proyek akan muncul di atas halaman (sebagai popup/modal) yang berisi gambar besar, deskripsi proyek, daftar teknologi (tech stack) yang digunakan, serta tautan langsung untuk mengunjungi proyek tersebut.
+
+6. Daftar Layanan Interaktif (Accordion)
+   - Penjelasan: Bagian layanan ("Yang bisa dikerjakan") memiliki panel interaktif. Jika sebuah judul layanan diklik, panel akan meluas (expand) untuk menampilkan rincian lebih lengkap tentang keahlian, teknologi spesifik, dan ilustrasi visual terkait.
+
+==================================================
+PANDUAN PENGGUNAAN
+==================================================
+
+1. NAVIGASI HALAMAN
+   - Gunakan menu di bagian atas ("Proyek", "Layanan", "Pengalaman", "Kontak") untuk berpindah ke area tersebut secara otomatis.
+   - Klik tombol "ID" atau "EN" di kanan atas (atau menu dropdown bahasa di perangkat seluler) untuk mengubah bahasa website.
+
+2. MELIHAT PROYEK
+   - Pada bagian "Proyek pilihan", klik tombol filter ("Semua", "Produk", "Eksplorasi") untuk menyaring karya.
+   - Klik kartu proyek atau gambar mana saja untuk memunculkan Jendela Detail Proyek (Modal). Klik ikon "X" atau klik di luar jendela untuk menutup modal.
+
+3. MEMBACA DETAIL LAYANAN
+   - Gulir ke bagian "Yang bisa dikerjakan".
+   - Klik pada salah satu kotak layanan (misal: "Web Development" atau "Backend & API") untuk membuka teks penjelasan mendetail dan melihat tag teknologi (React, Node.js, dll.) yang digunakan.
+
+4. MELIHAT PENGALAMAN KERJA
+   - Gulir ke bagian "Perjalanan karier" untuk membaca riwayat kronologis pendidikan dan pengalaman kerja.
+
+5. MENGHUBUNGI DEVELOPER
+   - Klik tombol "Hubungi saya" yang ada di navigasi atas, banner utama (hero section), atau di bagian paling bawah untuk memulai percakapan langsung via WhatsApp (pesan otomatis sudah diformat).
+
+==================================================
+KREDIT & KONTAK PENGEMBANG
+==================================================
+
+Website portofolio ini dikembangkan dan dirancang oleh Santika Kumara. Anda dapat terhubung dan melihat lebih banyak karya serta aktivitas profesionalnya melalui akun berikut:
+
+- GitHub
+  Akun: @urboysann
+  Link: https://github.com/urboysann
+
+- LinkedIn
+  Akun: @santikakumara
+  Link: https://www.linkedin.com/in/santikakumara/
+
+- Instagram
+  Akun: @santikakumara
+  Link: https://instagram.com/santikakumara
